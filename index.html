@@ -117,10 +117,10 @@
   <input type="text" id="codeInput" placeholder="Enter the code" />
   <button onclick="checkCode()">Submit</button>
   <div class="error" id="errorMsg">Wrong code. Try again!</div>
-  <div class="hint" id="hintText">Hint: Maybe it's a number you use... every day?</div>
+  <div class="hint" id="hintText">Hint: Maybe it's something you have saved to use... every day?</div>
 
   <script>
-    const secretCode = "441234567890"; // Replace with your real number later
+    const secretCode = "7990267681"; // Replace with your real number later
 
     function checkCode() {
       const input = document.getElementById("codeInput").value.trim();
@@ -129,7 +129,7 @@
 
       if (input === secretCode) {
         const message = encodeURIComponent("Hey love, I've cracked your stupid code and I'm eager for the date night today ❤‍🔥🥰");
-        window.location.href = `https://wa.me/${secretCode}?text=${message}`;
+        window.location.href = `https://wa.me/44${secretCode}?text=${message}`;
       } else {
         errorMsg.style.display = "block";
         hintText.style.display = "block";
